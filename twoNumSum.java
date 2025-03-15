@@ -1,11 +1,11 @@
-
-"""
-    Given a non-empty array of distinct integers, and an integer representing the sum. write a function that finds any tow numbers in the array that sum up to the target sum.
-    The function returns an array of the inputs in any order, if no sum is found, return an empty array.
-"""
 import java.util.*;
 
-class Program {
+public class TwoNumSum {
+  /* 
+    Given a non-empty array of distinct integers, and an integer representing the sum. write a function that finds any tow numbers in the array that sum up to the target sum.
+    The function returns an array of the inputs in any order, if no sum is found, return an empty array.
+
+  */
   public static int[] twoNumberSum(int[] array, int targetSum) {
     // does in O(nlogn) complexity
     Arrays.sort(array);
