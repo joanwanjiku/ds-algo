@@ -25,7 +25,7 @@ public class ValidateSequences {
                     break;
                 }
                 if (sequence.get(seqIndx).equals(num)){
-                    seqIndx++
+                    seqIndx++;
                 }
             }
             return seqIndx == sequence.size();
