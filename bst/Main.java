@@ -2,6 +2,8 @@ package bst;
 
 public class Main {
     public static void main(String[] args) {
+
+        // O(n)s and O(nlogn)T best case
         bst tree = new bst();
 
         tree.insert(new Node(5));
