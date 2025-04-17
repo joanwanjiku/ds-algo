@@ -20,8 +20,8 @@ public class classPhotos {
     public static void main(String[] args) {
         // O(nlogn)T, O(1)S.
         classPhotos cp = new classPhotos();
-        ArrayList<Integer> redShirtHeights = new ArrayList<>(Arrays.asList(3, 4, 5));
-        ArrayList<Integer> blueShirtHeights = new ArrayList<>(Arrays.asList(5, 6, 7));
+        ArrayList<Integer> redShirtHeights = new ArrayList<>(Arrays.asList(2, 4, 5));
+        ArrayList<Integer> blueShirtHeights = new ArrayList<>(Arrays.asList(5, 6, 9));
         
         
         System.out.println(cp.classPhotos(redShirtHeights, blueShirtHeights)); // should return true
