@@ -15,10 +15,9 @@ public class ThreeNumSum {
   public static ArrayList<Integer[]> threeNumSum(int[] array, int targetSum) {
     Arrays.sort(array);
     ArrayList<Integer[]> result = new ArrayList<>();
-    int n = array.length;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < array.length; i++) {
       int left = i + 1;
-      int right = n - 1;
+      int right = array.length - 1;
       while (left < right) {
         if (array[i] + array[left] + array[right] > targetSum) {
           right--;
@@ -26,7 +25,6 @@ public class ThreeNumSum {
           left++;
         } else {
           Integer[] triplet = new Integer[] {array[i], array[left], array[right]};
-          Arrays.toString(triplet);
           result.add(triplet);
           left++;
           right--;
