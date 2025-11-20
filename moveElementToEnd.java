@@ -16,7 +16,7 @@ public class moveElementToEnd {
     }
 
     private static void moveElementToEnd(List<Integer> array, int target) {
-        // TODO Auto-generated method stub
+        // O(n) T and O(1)s
         int j = array.size() - 1;
         int i = 0, temp;
         while (i < j) {
