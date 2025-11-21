@@ -42,7 +42,6 @@ public class groupAnagram {
 
             if (!ansMap.containsKey(key)) {
                 ansMap.put(key, new ArrayList<>());
-                System.out.println(ansMap);
             }
             ansMap.get(key).add(s);
         }
