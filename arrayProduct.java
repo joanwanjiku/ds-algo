@@ -16,7 +16,6 @@ public class arrayProduct {
     int[] ansArr = new int[arr.length];
     int pre = 1, post = 1;
     Arrays.fill(ansArr, 1);
-    System.out.println(ansArr);
     for (int i=0; i < arr.length; i++) {
         ansArr[i] = pre;
         pre = arr[i] * pre;
