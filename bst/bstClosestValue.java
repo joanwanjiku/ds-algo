@@ -1,3 +1,4 @@
+package bst;
 public class bstClosestValue {
     /* Given this bst, and a target(12) should return the closest(13) value. Each BST node has an int
      * value, left and right child node. A node is valid BST node iff: its value is stritcly greater than the values of every node to its letf,

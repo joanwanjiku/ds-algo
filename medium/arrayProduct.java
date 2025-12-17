@@ -1,8 +1,9 @@
+package medium;
 import java.util.Arrays;
 
 public class arrayProduct {
     /*
-    Given an integer array, return an array answer such that answe[i] is equal to the product of all the elements of nums except nums[i]
+    Given an integer array, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i]
     Algorithm must runs in O(n) without using the division operator
 
     input = [1,2,3,4]

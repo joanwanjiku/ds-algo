@@ -1,3 +1,4 @@
+package easy;
 public class anagram {
     /* 
     Given two string s, t return true if is an anagram else false

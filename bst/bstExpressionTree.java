@@ -1,3 +1,4 @@
+package bst;
 public class bstExpressionTree {
     /* Given this bst, should return a sum of its nodes depth. -1: +, -2: -, -3: /, -4: *
      * = 6 == (((2 * 3) - 2) + (8 / 3))

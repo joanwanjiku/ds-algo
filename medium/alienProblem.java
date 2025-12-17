@@ -1,9 +1,10 @@
+package medium;
 import java.util.*;
 
 
 public class alienProblem {
     /*
-    In an alien language, suppose they use English lowercase letters, but possibly in a different order, the order of the alphabetis some permutation of lowercase
+    In an alien language, suppose they use English lowercase letters, but possibly in a different order, the order of the alphabet is some permutation of lowercase
     letters. 
     Given a sequence of words written in the alien language and the order of the alphabet, return true iff the given words are sorted lexicography in this alien
     language
