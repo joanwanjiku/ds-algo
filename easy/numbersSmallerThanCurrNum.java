@@ -1,0 +1,36 @@
+package easy;
+
+public class numbersSmallerThanCurrNum {
+    // Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it.
+    // That is, for each nums[i] you have to count the number of valid j such that j != i and nums[j] < nums[i].
+    // Return the answer in an array.
+
+
+    public static void main(String[] args) {
+        numbersSmallerThanCurrNum obj = new numbersSmallerThanCurrNum();
+        int[] nums = {8,1,2,2,3};
+        int[] result = obj.smallerNumbersThanCurrent(nums);
+        for (int res: result) {
+            System.out.print(res + " ");
+        }
+    }
+    public int[] smallerNumbersThanCurrent(int[] nums) {
+        int[] count = new int[101];
+        int[] result = new int[nums.length];
+
+        for (int num: nums){
+            count[num]++;
+        }
+
+        for(int i = 1; i < 101; i++) {
+            count[i] += count[ i -1 ];
+        }
+        for (int i = 0; i < nums.length; i++) {
+            result[i] = nums[i] == 0 ? 0 : count[nums[i] - 1];
+        }
+
+        return result;
+        
+    }
+    
+}
